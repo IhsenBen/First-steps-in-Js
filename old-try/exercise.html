@@ -1,0 +1,28 @@
+<! DOCTYPE html>
+<html>
+    <head charest="utf-8"/>
+	<script src="traitement.js"></script>
+	<title< Exercice </title>
+	</head>
+	
+	<body>
+	  <table>
+	   <tr>
+	     <td>nom</td>
+		 <td><input type="text" id="zone_nom" onFocus="controle_saisie_nom()" onBlur="controle_vide_nom()"/></td>
+		 <td><span id="validation_nom"> </span>  </td>
+        </tr>
+        
+        <tr>
+	     <td>prenom</td>
+		 <td><input type="text" id="zone_prenom" onFocus="controle_saisie_prenom()" onBlur="controle_vide_prenom()"/></td>
+		 <td><span id="validation_prenom"> </span>  </td>
+        </tr>
+      </table>
+        <button onclick="controle_entrer ();">valider</button>
+        
+        
+    </body>
+    
+   
+   </html>

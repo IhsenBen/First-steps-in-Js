@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"/>
+		<script src="gestion_formulaire.js"></script>
+		<title>Exercice PHP</title> 
+	</head>
+	<body>
+	<h2> Conditions dans un formulaire </h2>
+	<form >
+	  
+     <table>
+		<tr>
+			<th></th>
+			<th> Prix UHT </th>
+			<th> Quantité Cde </th>
+			<th> Prix total HT </th>
+		</tr>
+		<tr>
+			<td>Chaises</td>
+			<td><input type="text" id="form_chaise_PrixHT" onfocus="verif_chaise_PrixHT()" onblur="quit_chaise_PrixHT()"/> </td>
+			<td><input type="text" id="form_chaise_Qte" onfocus="verif_chaise_Qte()" onblur="quit_chaise_Qte()"/> </td>
+			<td><input type="text" id="form_chaise_PrixTTC"/></td>
+			<td><span id="Erreur_chaise_TTC"></span></td>
+		</tr>
+		<tr>
+			<td>Tables</td>
+			<td><input type="text" id="form_table_PrixHT" onfocus="verif_table_PrixHT()" onblur="quit_table_PrixHT()"/> </td>
+			<td><input type="text" id="form_table_Qte" onfocus="verif_table_Qte()" onblur="quit_table_Qte()"/> </td>
+			<td><input type="text" id="form_table_PrixTTC"/></td>
+			<td><span id="Erreur_table_TTC" ></span></td>
+		</tr>
+		<tr>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Taux TVA (20 %)</td>
+			<td><input type="text" id="form_TVA" onfocus="verif_TVA()" onblur="quit_TVA()"/></td>
+		</tr>
+		<tr>
+			<td>Prix Total TTC</td>
+			<td><input type="text" id="formNom"/><span id="Erreur_total_TTC" ></span></td>
+		</tr>
+	</table>
+	
+</form>
+	<br/><button onclick="Calcul();" > Calculer </button>
+	<strong> Le prix le plus élevé est celui des ...., d'un montant de xxx,xx Euros TTC.</strong>
+
+	</body>
+</html>
