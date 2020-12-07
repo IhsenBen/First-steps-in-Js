@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/metropolis" type="text/css"/>
+    <title>Js Debuts</title>
+
+</head>
+
+<body>
+    
+<div class="container">
+    <button class="generer" onclick="lightmode()">Light/Dark Mode</button>
+    <div class="horloge">
+        <div class="heures">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="minutes">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="secondes">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+
+
+        <div class="box">
+            <button type="button" onclick="afficher()">Click Me!</button>
+
+            </br>
+            <div class="message">
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+
+                <div id="comf"><img id="myImage" style="width:100px"></div>
+            </div>
+        </div>
+
+
+
+
+        <div id="container">
+            <div id="nombre">0</div>
+            <button id="plus">+</button>
+            <button id="moin">-</button>
+        </div>
+
+
+        <div class="container_login">
+            <h1 class="label">Connectez-vous</h1>
+            <form class="login_input" action="yay.html" method="post" name="form" onsubmit="return validated()">
+               <div class="font">Votre Mail ou numero de telephone</div>
+               <input autocomplete="off" type="text" name="email">
+                 <div id="email_error">
+                   Rentrez une adresse mail ou un numero de telephone valide :)
+                 </div>
+               <div class="font2">
+                   Votre mot de passe
+               </div>
+               <input type="password" name="password">
+               <div id="pass_error">
+                   Rentrez un mot de passe valide :)
+               </div>
+               <button type="submit">
+                   Connexion
+               </button>
+            </form>
+
+        </div>
+        <div class="loto_gen">
+            <div class="liste_num">
+        
+                <div class="holder"><a class="numero">?</a></div>
+                <div class="holder"><a class="numero">?</a></div>
+                <div class="holder"><a class="numero">?</a></div>
+                <div class="holder"><a class="numero">?</a></div>
+                <div class="holder"><a class="numero">?</a></div>
+
+            
+
+                
+                <div class="holder_1"><p class="numero_etoile">?</p></div>
+                <div class="holder_1"><p class="numero_etoile">?</p></div>
+                
+            </div>
+           
+            <button class="generer" onclick="flash()">Generez Vos Numeros Euromillion</button>
+                    
+          </div>
+
+
+ </div>
+
+
+        <!-- <div class="chrono">
+            <form class="chronoform" name="chronoForm">
+                <section><input type="text" name="chronotime" id="chronotime" value="0:00:00:00" /></section>
+                <input type="button" name="startstop" value="Start!" onClick="chronoStart()" />
+                <input type="button" name="reset" value="Reset!" onClick="chronoReset()" />
+            </form>
+        </div> -->
+
+        <!-- <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          var x = Math.floor((Math.random() * 10) + 1);
+          document.getElementById("demo").innerHTML = x;
+        }
+        </script> -->
+
+        
+
+</div>
+
+
+    <script src="horloge.js"></script>
+    <script src="index.js"></script>
+    <script src="chrono.js"></script>
+    <script src="compteur.js"></script>
+    <script src="form.js"></script>
+    <script src="loto.js"></script>
+    
+</body>
+
+</html>
